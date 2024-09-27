@@ -2,20 +2,20 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: nginx
+    app: welcome-php
   name: nginx
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      app: welcome-php
   strategy: {}
   template:
     metadata:
       labels:
-        app: nginx
+        app: welcome-php
     spec:
       containers:
       - image: quay.io/redhatworkshops/welcome-php:latest
-        name: nginx
+        name: welcome-php
         resources: {}
