@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: welcome-php
-  name: nginx
+  name: welcome-php
 spec:
   replicas: 2
   selector:
