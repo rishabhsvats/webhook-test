@@ -5,7 +5,7 @@ metadata:
     app: welcome-php
   name: nginx
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: welcome-php
